@@ -1,0 +1,54 @@
+<!--pages/post/post.wxml-->
+<view>
+  <swiper style="height:500rpx" indicator-dots="true" autoplay="true">
+    <swiper-item>
+      <image catchtap="onSwiperTap"
+      src="/images/post/1.jpeg" data-postId="0"></image>
+    </swiper-item>
+    <swiper-item>
+      <image catchtap="onSwiperTap"
+      src="/images/post/2.jpg" data-postId="1"></image>
+    </swiper-item>
+    <swiper-item>
+      <image catchtap="onSwiperTap"
+      src="/images/post/3.jpeg" data-postId="2"></image>
+    </swiper-item>
+  </swiper>
+  
+  <block wx:for="{{post_key}}" wx:key="item" wx:for-index="idx">
+    <view class="post-container">
+      <view class="divide">
+      </view>
+      <text class="content-header">{{(idx+1)+"."+item.content_header}}</text>
+      <view class="pics">
+        <view class="post-left">
+          <image
+          src="{{item.post_image_1}}"
+          catch:tap="onPostLeague"
+          data-postID="{{item.postId}}"></image>
+        </view>
+        <view class="post-right">
+          <image
+          src="{{item.post_image_2}}"></image>
+          <image
+          src="{{item.post_image_3}}"></image>
+          <image
+          src="{{item.post_image_4}}"></image>
+        </view>
+      </view>
+      <text class="content">{{item.content}}
+      </text>
+      <view class="post-like">
+        <image class="post-like-image"
+        src="../../images/icon/chat.png"></image>
+        <text class="post-like-font">{{item.like}}</text>
+        <image class="post-like-image"
+        src="../../images/icon/view.png">
+        </image>
+        <text>{{item.view}}</text>
+      </view>
+    </view>
+  </block>
+  <view class="divide">
+  </view>
+</view>

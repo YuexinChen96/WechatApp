@@ -1,0 +1,41 @@
+<!--pages/post/post-league/post-league.wxml-->
+<view class="container">
+  <image class="head-image" src="{{post_image_1}}"></image>
+  <image catchtap="onMusicTap"
+  class="audio" src="/images/icon/music-1.png"></image>
+  <view class="logo">
+    <image src="{{logo}}"></image>
+    <text class="leagueName">{{content_header}}</text>
+  </view>
+  <text class="title">{{title}}</text>
+  <view class="tool">
+    <view class="circle-image">
+      <image
+      wx:if="{{like_state}}" catchtap="onLikeTap"
+      src="/images/icon/like.png"></image>
+      <image 
+      wx:else catchtap="onLikeTap"
+      src="/images/icon/collection.png"></image>
+      <image catchtap="onShareTap" 
+      class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="content">{{detail}}</text>
+  <view class="horizon"></view>
+  <text class="hero">英雄</text>
+  <view class="heros_wrap">
+    <view class="h">
+      <image src="{{post_image_2}}"></image>
+      <text class="content_h">{{hero_name_1}}</text>
+    </view>
+    <view class="h">
+      <image src="{{post_image_3}}"></image>
+      <text class="content_h">{{hero_name_2}}</text>
+    </view>
+    <view class="h">
+      <image src="{{post_image_4}}"></image>
+      <text class="content_h">{{hero_name_3}}</text>
+    </view>
+  </view>
+</view>

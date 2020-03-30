@@ -1,0 +1,71 @@
+/* pages/post/post.wxss */
+swiper image{
+  width: 100%;
+  height: 500rpx;
+}
+
+.post-container{
+  background-color: #b3d4db;
+}
+
+.divide{
+  width: 100%;
+  height: 20rpx;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.pics{
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.post-left{
+  width: 80%;
+}
+
+.post-left image{
+  height: 420rpx;
+  width: 100%;
+}
+
+.post-right{
+  width: 130rpx;
+}
+
+.post-right image{
+  height: 130rpx;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.content-header{
+  margin-top: 20rpx;
+  font-family: cursive;
+  font-size: 50rpx;
+}
+
+.content{
+  font-size: 28rpx;
+}
+
+.post-like{
+  display: flex;
+  padding-bottom: 10rpx;
+  flex-direction: row;
+  align-items: center;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+
+.post-like-image{
+  height: 32rpx;
+  width: 32rpx;
+  margin-right: 16rpx;
+}
+
+.post-like-font{
+  margin-right: 40rpx;
+}

@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <image class="user-avatar" src="/images/avatar.png"></image>
+  <text class="user-name">\n你好，用户</text>
+  <view class="moto-container" bind:tap="onTap">
+    <text class="moto">开启小程序之旅</text>
+  </view>
+</view>
